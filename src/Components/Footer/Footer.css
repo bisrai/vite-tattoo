@@ -1,0 +1,54 @@
+/* --------------------- FOOTER SECTION ----------------------- */
+
+.footer {
+    background-color: #D14D72;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    line-height: 50px;
+    font-size: 1.6rem;
+    border-top: 1px solid white;
+}
+
+.footerInfo {
+    margin-top: 30px;
+
+}
+
+.socialIcons {
+    font-size: 1.8rem;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: white;
+}
+
+.socialIcons i {
+    opacity: 0.8;
+    transition: all 300ms ease-in;
+}
+
+.socialIcons i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* -----------------------MOBILE STYLES------------------------- */
+
+@media (max-width:378px) {
+    .footer {
+        justify-content: center;
+    }
+
+}

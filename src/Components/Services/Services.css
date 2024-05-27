@@ -1,0 +1,88 @@
+/* --------------------- SERVICES SECTION ----------------------- */
+
+.servicesSection h1 {
+    text-align: center;
+}
+
+.service {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 6rem;
+    justify-content: space-evenly;
+}
+
+.serviceCard {
+    box-shadow: 0 0 10px #001b2d;
+    margin-top: 5rem;
+    border-radius: 3px;
+    width: 270px;
+    transition: all 300ms ease-in;
+}
+
+.serviceCard:hover {
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.46) 217.91%);
+    box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+}
+
+.serviceImg {
+    height: 190px;
+    overflow: hidden;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.serviceImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.serviceContent {
+    padding: 1rem;
+    color: #707070;
+}
+
+.serviceContent h2 {
+    font-size: 1rem;
+}
+
+.serviceContent p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.serviceTitle {
+    display: flex;
+    align-items: center;
+    color: #D14D72;
+}
+
+@media screen and(min-width:900px) {
+    .service {
+        display: flex;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .serviceImg {
+        height: auto;
+        flex: 1;
+    }
+
+    .serviceContent {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
